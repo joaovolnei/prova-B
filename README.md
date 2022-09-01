@@ -1,74 +1,69 @@
-# **PROVA A**
+# **PROVA B**
 # *E01, E02, E03: Operador Ternário*
 
-### **E01: Experiência do Programador**
-Peça para o Programador informar quantos anos possui de experiência profissional. 
+### **E01: Perfil do Profissional**
+Peça para o usuário informar quantos anos possui de experiência profissional.
 
-Peça também para que o Programador informe se possui Curso Técnico na área de Informática. 
+Peça também para que o Profissional informe se possui Curso de Graduação e também informar se possui Curso de Pós-Graduação.
 
-O outro dado que o Programador deverá informar é se possui Curso de Graduação na área de Informática.
+Outro dado relevante é perguntar se o Profissional realiza trabalho de voluntariado.
 
-Considere que cada ano de experiência vale quatro pontos, possuir Curso Técnico vale 10 pontos e possuir Curso de Graduação vale 15 pontos.
+Considere que cada ano de experiência equivale 1.5 pontos, possuir Curso Curso de Graduação equivale 10 pontos e possuir Curso de Pós-Graduação equivale a 15 pontos. Realizar trabalho de voluntariado equivale a 10 pontos.
 
-Se o Programador possuir até 25 pontos (inclusive), será considerado INICIANTE.
+Se o Profissional possuir até 35 pontos (inclusive), será considerado EM EVOLUÇÃO.
 
-Se o Programador possuir mais de 25 pontos, será considerado EXPERIENTE.
+Se o Profissional possuir mais de 35 pontos, será considerado VETERANO.
 
-Calcule os pontos e apresente o nível de experiência do Programador.
+Calcule os pontos e apresente o nível de experiência do Profissional.
 
-### **E02: Taxa de Juros**
-
-Peça para o usuário informar o valor da casa que deseja comprar. Peça também para ele informar em quantos anos pagará o financiamento da casa.
+### **E02: Tabela de Correção de Preço**
+Peça para o usuário informar o valor da residência que deseja comprar. Peça também para ele informar em quantos meses pagará o financiamento da casa.
 
 Considere que:
 
-Se o número de anos for até 10 (inclusive), o juro a ser aplicado será de 45%.
+Se o número de meses for até 120 (inclusive), o juro a ser aplicado será de 55%.
 
-Se o número de anos for até 20 (inclusive), o juro a ser aplicado será de 60%.
+Se o número de meses for até 240 (inclusive), o juro a ser aplicado será de 65%.
 
-Se o número de anos for acima de 20, o juro a ser aplicado será de 85%.
+Se o número de meses for acima de 240, o juro a ser aplicado será de 85%.
 
-Apresente o valor final a ser pago pela casa, considerando o juro estabelecido para a quantidade de anos de financiamento.
+Apresente o valor final a ser pago pela residência, considerando o juro estabelecido para a quantidade de meses de financiamento.
 
-### **E03: Pesquisa de Preço**
-Peça para o usuário informar o preço da gasolina de três diferentes postos de combustível e considere o seguinte cenário:
+### **E03: Temperatura dos últimos 4 dias**
+Peça para o usuário informar a temperatura mínima de cada um dos últimos 4 dias. Calcule a média das temperaturas informadas. Após, considere o seguinte cenário:
 
-Se a média dos preços for até R$ 5,00 (inclusive 5), o programa deverá considerar que o preço está ACEITÁVEL.
+Se a média da temperatura for inferior a 10 (inclusive), o programa deverá apresentar a mensagem "FRIO INTENSO".
 
-Se a média dos preços for até R$ 6,50 (inclusive 6.5), o programa deverá considerar que o preço está ALTO.
+Se a média da temperatura for inferior a 20 (inclusive), o programa deverá apresentar a mensagem "FRIO MODERADO".
 
-Se a média dos preços foro acima de R$ 6,50 (6.5), o programa deverá considerar que o preço está ABUSIVO.
+Se a média da temperatura for superior a 20, o programa deverá apresentar a mensagem "PARTIU PRAIA".
 
-Apresente a situação do preço do combustível.
+Apresente a mensagem final, de acordo com o cenário descrito acima.
 
 # *E04, E05: Switch...Case*
 
-### **E04: Abastecer o carro no posto de combustível**
-Peça para o usuário informar o tipo de combustível que deseja colocar no seu veículo e considere a seguinte situação:
+### **E04: Realizar compra na Panificadora**
+Peça para o usuário informar o que deseja comprar na panificadora e considere a seguinte situação:
 
-Se informou gasolina, retornará a mensagem "O litro da gasolina custa R$ 5,00".
+Se informou "Pão Francês", o programa deverá apresentar a mensagem "Preço do Kg: R$ 5,00."
 
-Se informou álcool, retornará a mensagem "O álcool está em falta".
+Se informou "Bolo-Cuca", o programa deverá apresentar a mensagem "Preço do pedaço: R$ 15,00."
 
-Se informou GNV, retornará a mensagem "GNV está caro demais".
+Se informou "Sonho", o programa deverá apresentar a mensagem "Preço da Unidade: R$ 1,50."
 
-Se informou diesel, retornará a mensagem "O litro do diesel custa R$ 8,00".
+Crie também um default que retornará a mensagem "Opção de compra inválida".
 
-Crie também um default que retornará a mensagem "Opção de combustível inválida".
+DICA: Use PF para Pão Francês, BC para Cuca, SO para Sonho.
 
-Apresente a mensagem de acordo com o tipo de combustível desejado.
+### **E05: Calcular hora de trabalho para cada Turno**
+Peça para o Funcionário informar o turno que trabalha e quanto recebe por hora. Após, considere a seguinte situação:
 
-DICA: Use G para gasolina, A para álcool, N para GNV, D para diesel
+Se o turno for Manhã, o valor da hora terá acréscimo de 2% (2/100).
 
-### **E05: Calcular custo da hora de trabalho**
-Peça para o dono da empresa informar o cargo do funcionário e a quantidade de horas trabalhadas na semana e calcule o custo do funcionário, considerando o seguinte cenário:
+Se o turno for Tarde, o valor da hora terá acréscimo de 4% (4/100).
 
-O valor da hora de de trabalho de cada um é de R$ 10,00.
+Se o turno for Noite, o valor da hora terá acréscimo de 7% (7/100).
 
-Se o funcionário for Programador, o valor da hora terá acréscimo de 10% (10/100).
+Calcule e apresente o valor total a ser pago para a hora de trabalho do funcionário, de acordo com o seu turno de trabalho.
 
-Se o funcionário for Líder, o valor da hora terá acréscimo de 15% (15/100).
-
-Se o funcionário for Diretor, o valor da hora terá acréscimo de 30% (30/100).
-
-Calcule e apresente o valor total a ser pago para o funcionário, de acordo com o seu cargo e a quantidade de horas trabalhadas.
+DICA: Use M para Manhã, T para Tarde, N para Noite.
